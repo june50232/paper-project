@@ -123,6 +123,7 @@ p {
 }
 
 .shadow {
+    display:none;
     position: absolute;
     top:0;
     bottom:0;
@@ -130,6 +131,10 @@ p {
     left:0;
     z-index: 3;
     background-color: rgba(239,239,239,0.9);
+}
+
+.shadow.active {
+    display: block;
 }
 
 .lightbox {
@@ -160,6 +165,8 @@ p {
     left: 50%;
     margin-left: -40px;
     background-color: rgba(239,239,239,1);
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
 }
 
@@ -170,8 +177,29 @@ p {
     font-size: 24px;
 }
 
+#pagePrepare.hidden {
+    display: none;
+}
+
 #pageRead {
     display:none;
+}
+
+#pageRead.active {
+    display: block;
+}
+
+#pageRead section {
+    text-align: left;
+}
+
+.fixed-photo {
+    position: fixed;
+    right:0;
+    bottom: 50px;
+    -webkit-box-shadow: -5px 6px 6px -5px #777;
+    -moz-box-shadow: -5px 6px 6px -5px #777;
+    box-shadow: -5px 6px 6px -5px #777;
 }
 
 .fixed-photo {
