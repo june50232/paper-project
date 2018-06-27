@@ -5,6 +5,9 @@
     }
 
     function toggleAreUReady () {
+        var uploadFile = $('#buttonUpload')[0].files[0];
+        var imageLink = window.URL.createObjectURL(uploadFile);
+        $('#imageFixed').css("background-image", "url('" + imageLink + "')");
         $("#lightbox").toggleClass("active");
     }
 
@@ -20,8 +23,8 @@
     }
 
     $(document).ready(function(){
-        $("#buttonUpload").on("click", toggleAreUReady);
         $("#lightbox").on("click", handleNextClick);
         $("#redo").on("click", togglePageRead);
+        $("#buttonUpload").on("change", toggleAreUReady);
     });
 }())
