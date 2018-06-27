@@ -1,11 +1,6 @@
 div, section {
-    /*border: 1px solid blue;*/
     box-sizing: border-box;
     width:100%;
-}
-
-p{
-    /*border: 1px solid lightblue;*/
 }
 
 body {
@@ -18,6 +13,10 @@ body {
 .icon:before {
     font-family: Font Awesome\ 5 Pro;
     font-weight:bold;
+}
+
+hr {
+    border-style: dashed;
 }
 
 .header {
@@ -66,7 +65,7 @@ h3 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 0;
     padding:8px;
     text-indent:2em;
@@ -257,4 +256,8 @@ ol.list {
     background-clip: content-box !important;
     background-repeat: no-repeat;
     background-color:white;
+}
+
+.content {
+    padding-top: 18px;
 }
