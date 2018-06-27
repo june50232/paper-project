@@ -155,9 +155,9 @@ p {
     margin:0;
     font-size: 32px;
     position:absolute;
-    bottom:300px;
+    bottom: 200px;
     left:50%;
-    margin-left: -96px;
+    margin-left: -129px;
     text-shadow: 1px 1px #777;
 }
 
@@ -165,9 +165,17 @@ p {
     content:'';
 }
 
+.browse-image {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    bottom: 260px;
+}
+
 .next {
     position: absolute;
-    bottom: 120px;
+    bottom: 50px;
     writing-mode: vertical-lr;
     width: 60px;
     line-height: 60px;
@@ -248,4 +256,5 @@ ol.list {
     background-position: center !important;
     background-clip: content-box !important;
     background-repeat: no-repeat;
+    background-color:white;
 }

@@ -8,6 +8,7 @@
         var uploadFile = $('#buttonUpload')[0].files[0];
         var imageLink = window.URL.createObjectURL(uploadFile);
         $('#imageFixed').css("background-image", "url('" + imageLink + "')");
+        $('#browseImage').attr("src", imageLink);
         $("#lightbox").toggleClass("active");
     }
 
@@ -22,7 +23,12 @@
         togglePageRead();
     }
 
+    function setPageHeight () {
+
+    }
+
     $(document).ready(function(){
+        setPageHeight();
         $("#lightbox").on("click", handleNextClick);
         $("#redo").on("click", togglePageRead);
         $("#buttonUpload").on("change", toggleAreUReady);
