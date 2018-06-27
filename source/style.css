@@ -55,10 +55,6 @@ section {
     padding:0 16px;
 }
 
-h2 {
-    text-align: center;
-}
-
 h3:before {
     content:'\f0a9';
     padding-right:8px;
@@ -146,6 +142,7 @@ p {
 
 .shadow.active {
     display: block;
+    cursor: pointer;
 }
 
 .lightbox {
@@ -183,6 +180,7 @@ p {
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
+    cursor: pointer;
 }
 
 .down-arrow:before {
@@ -199,7 +197,7 @@ p {
 
 .page.read.active {
     display: block;
-    padding-bottom:267px;
+    padding-top:315px;
 }
 
 .page.read section {
@@ -239,15 +237,15 @@ ol.list {
 
 .fixed-photo {
     position: fixed;
-    right:0;
-    bottom: 0;
+    left: 0;
+    top: 48px;
     -webkit-box-shadow: -5px 6px 6px -5px #777;
     -moz-box-shadow: -5px 6px 6px -5px #777;
     box-shadow: -5px 6px 6px -5px #777;
     width:150px;
     height:267px;
-    border-radius: 15% 0% 0% 0% / 10% 0% 0% 0%;
     background-size:100% !important;
     background-position: center !important;
     background-clip: content-box !important;
+    background-repeat: no-repeat;
 }
