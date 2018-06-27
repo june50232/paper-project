@@ -162,6 +162,10 @@ p {
     text-shadow: 1px 1px #777;
 }
 
+.lightbox h3:before {
+    content:'';
+}
+
 .next {
     position: absolute;
     bottom: 120px;
@@ -224,6 +228,11 @@ ol.list {
 .list p {
     text-indent: 0;
     margin-bottom: 0.5em;
+}
+
+.redo:before {
+    content:"\f0e2";
+    padding-right: 8px;
 }
 
 .fixed-photo {
