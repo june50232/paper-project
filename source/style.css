@@ -247,7 +247,7 @@ ol.list {
     width:150px;
     height:267px;
     border-radius: 15% 0% 0% 0% / 10% 0% 0% 0%;
-    background-size:100%;
-    background-position: center;
-    background-clip: content-box;
+    background-size:100% !important;
+    background-position: center !important;
+    background-clip: content-box !important;
 }
