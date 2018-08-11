@@ -15,20 +15,23 @@
     function togglePageRead () {
         $("#pagePrepare").toggleClass("hidden");
         $("#pageRead").toggleClass("active");
-        scrollTop();
     }
 
     function handleNextClick () {
         toggleAreUReady();
+        $("#pageRead").toggleClass("hidden-image");
         togglePageRead();
+        scrollTop();
     }
 
-    function setPageHeight () {
-
+    function initPage () {
+        togglePageRead();
+        $("#pageRead").toggleClass("hidden-image");
+        scrollTop();
     }
 
     $(document).ready(function(){
-        setPageHeight();
+        initPage();
         $("#lightbox").on("click", handleNextClick);
         $("#redo").on("click", togglePageRead);
         $("#buttonUpload").on("change", toggleAreUReady);

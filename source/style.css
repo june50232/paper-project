@@ -261,3 +261,11 @@ ol.list {
 .content {
     padding-top: 18px;
 }
+
+.page.read.active.hidden-image {
+    padding-top: 72px;
+}
+
+.page.read.active.hidden-image .fixed-photo{
+    display: none;
+}
