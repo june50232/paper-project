@@ -269,3 +269,14 @@ ol.list {
 .page.read.active.hidden-image .fixed-photo{
     display: none;
 }
+
+img.figure {
+    width: 100%;
+    max-width: 509px;
+}
+
+p.caption {
+    color: gray;
+    font-size: 10px;
+    text-indent: 0;
+}
